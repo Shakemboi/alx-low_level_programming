@@ -8,19 +8,15 @@
  */
 void print_rev(char *s)
 {
-	int length = 0;
-	int i, j;
-	char temp;
-
-	while (s[length] != '\0')
+	const char *end = s;
 	{
-		length++;
+		end++;
 	}
-	
-	for (i = 0, j = length - 1; i < j; i++, j--)
+	end--;
+	while (end >= s)
 	{
-		temp = s[i];
-		s[i] = s[j];
-		s[j] = temp;
+		_putchar(*end);
+		end--;
 	}
+	_putchar('\n');
 }
