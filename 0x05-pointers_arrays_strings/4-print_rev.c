@@ -9,6 +9,8 @@
 void print_rev(char *s)
 {
 	const char *end = s;
+
+	while (*end != '\0')
 	{
 		end++;
 	}
