@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * _strspn - main function
+  * _strspn - 
   *
   * @s: Function parameter
   *
@@ -14,18 +14,18 @@ unsigned int _strspn(char *s, char *accept)
 
 	unsigned int _strspn(char *s, char *accept);
 	unsigned int i = 0;
-	int k;
+	int e;
 
 	while (*s)
 	{
-	for (k = 0; accept[k]; k++)
+	for (e = 0; accept[e]; e++)
 	{
-	if (*s == accept[k])
+	if (*s == accept[e])
 	{
 	i++;
 	break;
 	}
-	else if (accept[k + 1] == '\0')
+	else if (accept[e + 1] == '\0')
 	return (i);
 	}
 	s++;
