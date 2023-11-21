@@ -1,7 +1,7 @@
 #ifndef LISTS_H
 #define LISTS_H
 
-#include <stdlib>
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
